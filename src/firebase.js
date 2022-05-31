@@ -11,6 +11,6 @@ const app = firebase.initializeApp({
   apiKey: process.env.REACT_APP_API_KEY,
 });
 
-export const auth = app.auth();
+const auth = app.auth();
 export const db = getFirestore(app);
-export default app;
+export default auth;
